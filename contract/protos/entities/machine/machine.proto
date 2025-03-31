@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package entities.machine;
 
-option go_package = "github.com/SMContract/protos/entities/machine;machine";
+option go_package = "github.com/GHFluding/SMContract/tree/main/contract/protos/entities/machine;machine";
 
 message CreateMachine {
   string name = 1;
