@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package entities.task;
+
+option go_package = "github.com/your-project/protos/entities/task";
+
+message CreateTaskParams {
+  int64 machine_id = 1;
+  int64 shift_id = 2;
+  string frequency = 3;
+  string task_priority = 4;
+  string description = 5;
+  int64 created_by = 6;
+}

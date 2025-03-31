@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package entities.user;
+
+option go_package = "github.com/your-project/protos/entities/user";
+
+message CreateUserParams {
+  optional int64 bitrix_id = 1;
+  string telegram_id = 2;
+  string name = 3;
+  string role = 4;
+}

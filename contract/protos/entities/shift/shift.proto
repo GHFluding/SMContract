@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package entities.shift;
+
+option go_package = "github.com/your-project/protos/entities/shift";
+
+message CreateShiftParams {
+  int64 machine_id = 1;
+  int64 shift_master = 2;
+}
