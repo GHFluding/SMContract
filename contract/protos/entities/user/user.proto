@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package entities.user;
+package user;
 
-option go_package = "github.com/SMContract/protos/entities/user";
+option go_package = "entities/user;user";
 
 message CreateUserParams {
   optional int64 bitrix_id = 1;

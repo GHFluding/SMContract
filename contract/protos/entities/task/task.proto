@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package entities.task;
+package task;
 
-option go_package = "github.com/SMContract/protos/entities/task";
+option go_package = "entities/task;task";
 
 message CreateTaskParams {
   int64 machine_id = 1;

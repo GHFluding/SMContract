@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package entities.shift;
+package shift;
 
-option go_package = "github.com/SMContract/protos/entities/shift";
+option go_package = "entities/shift;shift";
 
 message CreateShiftParams {
   int64 machine_id = 1;
