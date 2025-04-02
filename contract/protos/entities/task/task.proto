@@ -12,3 +12,12 @@ message CreateTaskParams {
   string description = 5;
   int64 created_by = 6;
 }
+
+message TaskResponse {
+  CreateTaskParams data = 1;
+  string status = 2;
+}
+
+service TaskService {
+  rpc Create(CreateTaskParams) returns (TaskResponse);
+}

@@ -10,3 +10,12 @@ message CreateUserParams {
   string name = 3;
   string role = 4;
 }
+
+message UserResponse {
+  CreateUserParams data = 1;
+  string status = 2;
+}
+
+service UserService {
+  rpc Create(CreateUserParams) returns (UserResponse);
+}
