@@ -13,7 +13,6 @@ message CreateUserParams {
 
 message UserResponse {
   CreateUserParams data = 1;
-  string status = 2;
 }
 
 service UserService {

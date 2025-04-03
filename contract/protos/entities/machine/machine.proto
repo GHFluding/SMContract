@@ -12,7 +12,6 @@ message CreateMachine {
 
 message MachineResponse {
   CreateMachine data = 1;
-  string status = 2; 
 }
 
 service MachineService {

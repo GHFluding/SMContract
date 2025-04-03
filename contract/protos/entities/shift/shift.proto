@@ -11,7 +11,6 @@ message CreateShiftParams {
 
 message ShiftResponse {
   CreateShiftParams data = 1;
-  string status = 2;
 }
 
 service ShiftService {
